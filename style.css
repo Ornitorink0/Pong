@@ -1,0 +1,105 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light dark;
+
+    --bg: #F9DC43;
+    --col: #121313;
+
+    --window-bg: #1D1E1F;
+    --window-title: #A0A0A0;
+    --window-frg: #ffffff6b;
+}
+
+body {
+    background: var(--bg);
+    color: var(--col);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.window {
+    width: 100vw;
+    height: 32px;
+    background: var(--window-bg);
+    color: var(--window-title);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--window-frg);
+    z-index: 9999;
+    -webkit-app-region: drag;
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.title-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 8px;
+}
+
+.title-bar-text {
+    font-size: 14px;
+    padding-bottom: 1px;
+}
+
+.window img {
+    width: 16px;
+    height: 16px;
+}
+
+.window-commands {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 8px;
+    pointer-events: auto;
+    -webkit-app-region: no-drag;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.window-commands div {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.window-commands div:hover {
+    transform: scale(1.1);
+    filter: invert(1);
+}
+
+.window-content {
+    width: 100vw;
+    height: calc(100vh - 32px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window-bottom {
+    width: 100vw;
+    height: 32px;
+    background: var(--window-bg);
+    color: var(--window-title);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}

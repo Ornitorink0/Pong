@@ -1,0 +1,38 @@
+{
+  "name": "coolpong",
+  "productName": "Pong",
+  "version": "1.0.0",
+  "description": "A Pong game for desktop made with ElectronJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pong",
+    "Desktop",
+    "Electron"
+  ],
+  "author": "Ornitorink0",
+  "license": "GPLv3",
+  "devDependencies": {
+    "electron": "^31.3.1",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.ornitorink0.coolpong",
+    "productName": "Pong",
+    "files": [
+      "**/*",
+      "public/**/*",
+      "assets/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "icon": "./assets/icon.ico"
+    }
+  }
+}
