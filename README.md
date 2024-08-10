@@ -2,7 +2,7 @@
 
 ![Pong preview](https://github.com/Ornitorink0/Pong/blob/main/public/pong-preview.gif "GIF - Pong Preview")
 
-Pong is one of the first commercialized video games, produced by Atari as an arcade in 1972 and as a dedicated console in 1975. It is a ping-pong simulator, with extremely simplified black and white graphics (Wikipedia).
+Pong is one of the first commercialized video games, produced by Atari as an arcade in 1972 and as a dedicated console in 1975. It is a ping-pong simulator, with extremely simplified black and white graphics ([Wikipedia](https://it.wikipedia.org/wiki/Pong)).
 
 What I wanted to do is simply recreate it using ElectronJS technology to practice.
 
